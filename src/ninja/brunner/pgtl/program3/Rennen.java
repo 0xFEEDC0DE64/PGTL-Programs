@@ -1,34 +1,47 @@
 package ninja.brunner.pgtl.program3;
 
-import java.util.Random;
+import ninja.brunner.pgtl.program3.exceptions.StreckeNichtFreiException;
+import ninja.brunner.pgtl.program3.exceptions.SchneckeNichtFreiException;
+import ninja.brunner.pgtl.program3.exceptions.RennenNichtAktivException;
 
 public class Rennen {
-    public Random random;
-    public Rennstrecke rennStrecke;
+    String name;
+    Rennstrecke rennStrecke;
+    Schnecke schnecken[];
 
-    public Rennen()
+    boolean currentlyRenning;
+
+    public Rennen(String name, Rennstrecke rennStrecke, Schnecke schnecken[])
     {
-        random = new Random();
-        rennStrecke = new Rennstrecke(this, random.nextInt(50) + 25, random.nextInt(10) + 15);
+        this.name = name;
+        this.rennStrecke = rennStrecke;
+        this.schnecken = schnecken;
+
+        this.currentlyRenning = false;
     }
 
-    public void run() throws InterruptedException {
-        while(true) {
-            rennStrecke.kriechen();
+    public void begin() throws StreckeNichtFreiException, SchneckeNichtFreiException {
+        if(rennStrecke.currentRennen != null)
+            throw new StreckeNichtFreiException();
 
-            System.out.println(rennStrecke.toString());
+        for(Schnecke schnecke : schnecken)
+            if(schnecke.currentRennen != null)
+                throw new SchneckeNichtFreiException();
 
-            boolean anySchneckeUnterwegs = false;
-            for(Schnecke schnecke : rennStrecke.schnecken)
-                if(schnecke.position < rennStrecke.length) {
-                    anySchneckeUnterwegs = true;
-                    break;
-                }
+        currentlyRenning = true;
+        rennStrecke.currentRennen = this;
+        for(Schnecke schnecke : schnecken)
+            schnecke.currentRennen = this;
+    }
 
-            if(!anySchneckeUnterwegs)
-                break;
+    public void cleanup() throws RennenNichtAktivException
+    {
+        if(!currentlyRenning)
+            throw new RennenNichtAktivException();
 
-            Thread.sleep(1000);
-        }
+        currentlyRenning = false;
+        rennStrecke.currentRennen = null;
+        for(Schnecke schnecke : schnecken)
+            schnecke.currentRennen = null;
     }
 }

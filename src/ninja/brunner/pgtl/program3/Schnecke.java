@@ -50,4 +50,24 @@ public class Schnecke {
         } else
             return false;
     }
+
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+
+        sb.append(getClass().getName() + " \"" + name + "\"");
+        if(currentRennen != null) {
+            sb.append(' ');
+
+            for(int i = 0; i < position; i++)
+                sb.append('.');
+
+            sb.append('@');
+
+            for(int i = position; i < currentRennen.rennStrecke.length; i++)
+                sb.append(' ');
+            sb.append('#');
+        }
+
+        return sb.toString();
+    }
 }

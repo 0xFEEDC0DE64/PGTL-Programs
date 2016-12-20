@@ -2,31 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5b9a0ba8-faec-4467-9114-acbf3fcc979d" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PGTL-Programs/ninja/brunner/pgtl/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PGTL-Programs/ninja/brunner/pgtl/program3/Schnecke.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PGTL-Programs/ninja/brunner/pgtl/program3/exceptions/NameBereitsVergebenException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PGTL-Programs/ninja/brunner/pgtl/program3/exceptions/RennenNichtAktivException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PGTL-Programs/ninja/brunner/pgtl/program3/exceptions/SchneckeNichtFreiException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PGTL-Programs/ninja/brunner/pgtl/program3/exceptions/StreckeNichtFreiException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/PGTL-Programs/ninja/brunner/pgtl/program3/exceptions/ZuWenigGeldException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ninja/brunner/pgtl/Main.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ninja/brunner/pgtl/program3/exceptions/NameBereitsVergebenException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ninja/brunner/pgtl/program3/exceptions/RennenNichtAktivException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ninja/brunner/pgtl/program3/exceptions/SchneckeNichtFreiException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ninja/brunner/pgtl/program3/exceptions/StreckeNichtFreiException.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/ninja/brunner/pgtl/program3/exceptions/ZuWenigGeldException.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PGTL-Programs/ninja/brunner/pgtl/program3/Program.class" afterPath="$PROJECT_DIR$/out/production/PGTL-Programs/ninja/brunner/pgtl/program3/Program.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PGTL-Programs/ninja/brunner/pgtl/program3/RennSimulator.class" afterPath="$PROJECT_DIR$/out/production/PGTL-Programs/ninja/brunner/pgtl/program3/RennSimulator.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PGTL-Programs/ninja/brunner/pgtl/program3/Rennen.class" afterPath="$PROJECT_DIR$/out/production/PGTL-Programs/ninja/brunner/pgtl/program3/Rennen.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/production/PGTL-Programs/ninja/brunner/pgtl/program3/Wettbüro.class" afterPath="$PROJECT_DIR$/out/production/PGTL-Programs/ninja/brunner/pgtl/program3/Wettbüro.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ninja/brunner/pgtl/program3/Person.java" afterPath="$PROJECT_DIR$/src/ninja/brunner/pgtl/program3/Person.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ninja/brunner/pgtl/program3/Program.java" afterPath="$PROJECT_DIR$/src/ninja/brunner/pgtl/program3/Program.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ninja/brunner/pgtl/program3/RennSimulator.java" afterPath="$PROJECT_DIR$/src/ninja/brunner/pgtl/program3/RennSimulator.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ninja/brunner/pgtl/program3/Rennen.java" afterPath="$PROJECT_DIR$/src/ninja/brunner/pgtl/program3/Rennen.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ninja/brunner/pgtl/program3/Rennstrecke.java" afterPath="$PROJECT_DIR$/src/ninja/brunner/pgtl/program3/Rennstrecke.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ninja/brunner/pgtl/program3/Schnecke.java" afterPath="$PROJECT_DIR$/src/ninja/brunner/pgtl/program3/Schnecke.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ninja/brunner/pgtl/program3/Wettbüro.java" afterPath="$PROJECT_DIR$/src/ninja/brunner/pgtl/program3/Wettbüro.java" />
     </list>
     <ignored path="PGTL-Programs.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -46,38 +24,7 @@
     <favorites_list name="PGTL-Programs" />
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file leaf-file-name="Rennen.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ninja/brunner/pgtl/program3/Rennen.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Rennstrecke.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/ninja/brunner/pgtl/program3/Rennstrecke.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="459">
-              <caret line="27" column="67" selection-start-line="27" selection-start-column="67" selection-end-line="29" selection-end-column="69" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Schnecke.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/ninja/brunner/pgtl/program3/Schnecke.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="410">
-              <caret line="32" column="42" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -110,13 +57,13 @@
         <option value="$PROJECT_DIR$/src/ninja/brunner/pgtl/program3/Rennsimulator.java" />
         <option value="$PROJECT_DIR$/src/ninja/brunner/pgtl/program3/exceptions/NameBereitsVergebenException.java" />
         <option value="$PROJECT_DIR$/src/ninja/brunner/pgtl/program3/exceptions/ÄnderungenNichtMehrErlaubtException.java" />
-        <option value="$PROJECT_DIR$/src/ninja/brunner/pgtl/program3/RennSimulator.java" />
         <option value="$PROJECT_DIR$/src/ninja/brunner/pgtl/program3/Wettbüro.java" />
         <option value="$PROJECT_DIR$/src/ninja/brunner/pgtl/program3/Person.java" />
         <option value="$PROJECT_DIR$/src/ninja/brunner/pgtl/program3/Program.java" />
-        <option value="$PROJECT_DIR$/src/ninja/brunner/pgtl/program3/Rennen.java" />
         <option value="$PROJECT_DIR$/src/ninja/brunner/pgtl/program3/Rennstrecke.java" />
+        <option value="$PROJECT_DIR$/src/ninja/brunner/pgtl/program3/RennSimulator.java" />
         <option value="$PROJECT_DIR$/src/ninja/brunner/pgtl/program3/Schnecke.java" />
+        <option value="$PROJECT_DIR$/src/ninja/brunner/pgtl/program3/Rennen.java" />
       </list>
     </option>
   </component>
@@ -128,9 +75,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-7" />
-    <option name="width" value="960" />
-    <option name="height" value="1047" />
+    <option name="x" value="-8" />
+    <option name="y" value="-8" />
+    <option name="width" value="1936" />
+    <option name="height" value="1056" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
     <OptionsSetting value="true" id="Add" />
@@ -510,8 +458,8 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="0" width="960" height="1047" extended-state="0" />
-    <editor active="true" />
+    <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -520,12 +468,12 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.38420492" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25792813" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980973" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32977587" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3506356" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17239584" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -678,34 +626,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/ninja/brunner/pgtl/program3/Program.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="493">
-          <caret line="65" column="49" selection-start-line="65" selection-start-column="49" selection-end-line="65" selection-end-column="49" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/ninja/brunner/pgtl/program3/Person.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="17" column="14" selection-start-line="17" selection-start-column="14" selection-end-line="17" selection-end-column="14" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ninja/brunner/pgtl/program3/RennSimulator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="72">
-          <caret line="68" column="13" selection-start-line="68" selection-start-column="13" selection-end-line="68" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/ninja/brunner/pgtl/program3/Rennen.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="19" column="42" selection-start-line="19" selection-start-column="42" selection-end-line="19" selection-end-column="42" />
           <folding />
         </state>
       </provider>
@@ -718,10 +642,61 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.7.0_55/src.zip!/java/lang/Thread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="377">
+          <caret line="300" column="30" selection-start-line="300" selection-start-column="30" selection-end-line="300" selection-end-column="30" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.7.0_55/src.zip!/java/lang/StringBuilder.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="224">
+          <caret line="402" column="18" selection-start-line="402" selection-start-column="18" selection-end-line="402" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ninja/brunner/pgtl/program3/Program.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="555">
+          <caret line="76" column="1" selection-start-line="76" selection-start-column="1" selection-end-line="76" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://C:/Program Files (x86)/Java/jdk1.7.0_55/src.zip!/java/lang/Object.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="445">
+          <caret line="236" column="8" selection-start-line="236" selection-start-column="8" selection-end-line="236" selection-end-column="35" />
+          <folding>
+            <element signature="e#10180#10181#0" expanded="true" />
+            <element signature="e#10263#10264#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/ninja/brunner/pgtl/program3/Schnecke.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="410">
-          <caret line="32" column="42" selection-start-line="32" selection-start-column="42" selection-end-line="32" selection-end-column="42" />
+        <state relative-caret-position="461">
+          <caret line="59" column="12" selection-start-line="59" selection-start-column="12" selection-end-line="59" selection-end-column="12" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ninja/brunner/pgtl/program3/Rennen.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="55" column="90" selection-start-line="55" selection-start-column="85" selection-end-line="55" selection-end-column="90" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/ninja/brunner/pgtl/program3/RennSimulator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="352">
+          <caret line="75" column="45" selection-start-line="75" selection-start-column="45" selection-end-line="75" selection-end-column="45" />
           <folding />
         </state>
       </provider>

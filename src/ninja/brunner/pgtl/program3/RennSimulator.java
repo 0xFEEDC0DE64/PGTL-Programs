@@ -69,7 +69,13 @@ public class RennSimulator {
         try {
             rennen.begin();
 
-            while(rennen.schritt());
+            while(rennen.schritt()) {
+                System.out.println();
+                System.out.println();
+                System.out.println();
+                System.out.println(rennen.toString());
+                Thread.sleep(100);
+            }
 
             rennen.cleanup();
         }

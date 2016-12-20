@@ -49,4 +49,18 @@ public class Rennen {
 
         return anySchnecke;
     }
+
+    public String toString() {
+        StringBuilder sb = new StringBuilder();
+
+        sb.append(getClass().getName() + " \"" + name + "\" " + (currentlyRenning ? "aktiv" : "inaktiv"));
+        if(currentlyRenning) {
+            sb.append(" (Rennstrecke: \"" + rennStrecke.name + "\")\n");
+            for(Schnecke schnecke : schnecken) {
+                sb.append(schnecke.toString() + '\n');
+            }
+        }
+
+        return sb.toString();
+    }
 }

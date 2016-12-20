@@ -13,4 +13,22 @@ public class Rennstrecke {
 
         currentRennen = null;
     }
+
+    public void begin(Rennen rennen) throws Exception {
+        if(currentRennen != null)
+            throw new Exception("Bereits in einem Rennen!");
+
+        System.out.println("Bereite Rennstrecke \"" + name + "\" vor auf Rennen \"" + rennen.name + "\"");
+
+        currentRennen = rennen;
+    }
+
+    public void cleanup() throws Exception {
+        if(currentRennen == null)
+            throw new Exception("In keinem Rennen in Verwendung!");
+
+        System.out.println("Räume Rennstrecke \"" + name + "\" auf");
+
+        currentRennen = null;
+    }
 }

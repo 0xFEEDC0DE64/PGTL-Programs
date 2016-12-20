@@ -1,9 +1,5 @@
 package ninja.brunner.pgtl.program3;
 
-import ninja.brunner.pgtl.program3.exceptions.StreckeNichtFreiException;
-import ninja.brunner.pgtl.program3.exceptions.SchneckeNichtFreiException;
-import ninja.brunner.pgtl.program3.exceptions.RennenNichtAktivException;
-
 public class Rennen {
     String name;
     Rennstrecke rennStrecke;
@@ -20,28 +16,37 @@ public class Rennen {
         this.currentlyRenning = false;
     }
 
-    public void begin() throws StreckeNichtFreiException, SchneckeNichtFreiException {
-        if(rennStrecke.currentRennen != null)
-            throw new StreckeNichtFreiException();
+    public void begin() throws Exception {
+        System.out.println("Begine Rennen \"" + name + "\"");
+        if(currentlyRenning)
+            throw new Exception("Rennen bereits aktiv!");
 
+        rennStrecke.begin(this);
         for(Schnecke schnecke : schnecken)
-            if(schnecke.currentRennen != null)
-                throw new SchneckeNichtFreiException();
-
+            schnecke.begin(this);
         currentlyRenning = true;
-        rennStrecke.currentRennen = this;
-        for(Schnecke schnecke : schnecken)
-            schnecke.currentRennen = this;
     }
 
-    public void cleanup() throws RennenNichtAktivException
-    {
+    public void cleanup() throws Exception {
+        System.out.println("Beende Rennen \"" + name + "\"");
         if(!currentlyRenning)
-            throw new RennenNichtAktivException();
+            throw new Exception("Rennen nicht aktiv!");
 
-        currentlyRenning = false;
-        rennStrecke.currentRennen = null;
+        rennStrecke.cleanup();
         for(Schnecke schnecke : schnecken)
-            schnecke.currentRennen = null;
+            schnecke.cleanup();
+        currentlyRenning = false;
+    }
+
+    public boolean schritt() throws Exception {
+        if(!currentlyRenning)
+            throw new Exception("Rennen nicht aktiv!");
+
+        boolean anySchnecke = false;
+
+        for(Schnecke schnecke : schnecken)
+            anySchnecke |= schnecke.krabbeln();
+
+        return anySchnecke;
     }
 }

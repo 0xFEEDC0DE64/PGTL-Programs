@@ -1,16 +1,10 @@
 package ninja.brunner.pgtl.program3;
 
-import ninja.brunner.pgtl.program3.exceptions.NameBereitsVergebenException;
-import ninja.brunner.pgtl.program3.exceptions.ZuWenigGeldException;
-
-import java.util.ArrayList;
-
 public class Program {
     public static void main(String[] args) throws InterruptedException {
         System.out.println("Initialisiere...");
 
         RennSimulator rennSimulator = new RennSimulator();
-        Wettbüro büro = new Wettbüro();
 
         try {
             Rennstrecke rennstrecken[] = {
@@ -48,33 +42,35 @@ public class Program {
             };
 
             Person personen[] = {
-                büro.registrierePerson("Person 1", 1234),
-                büro.registrierePerson("Person 2", 12345),
-                büro.registrierePerson("Person 3", 123),
-                büro.registrierePerson("Person 4", 4444),
-                büro.registrierePerson("Person 5", 1500),
-                büro.registrierePerson("Person 6", 8123),
-                büro.registrierePerson("Person 7", 1000),
-                büro.registrierePerson("Person 8", 5555)
+                rennSimulator.getWettbüro().registrierePerson("Person 1", 1234),
+                rennSimulator.getWettbüro().registrierePerson("Person 2", 12345),
+                rennSimulator.getWettbüro().registrierePerson("Person 3", 123),
+                rennSimulator.getWettbüro().registrierePerson("Person 4", 4444),
+                rennSimulator.getWettbüro().registrierePerson("Person 5", 1500),
+                rennSimulator.getWettbüro().registrierePerson("Person 6", 8123),
+                rennSimulator.getWettbüro().registrierePerson("Person 7", 1000),
+                rennSimulator.getWettbüro().registrierePerson("Person 8", 5555)
             };
 
-            büro.wetteAbschließen(personen[0], rennen[0], rennen[0].schnecken[0], 100);
-            büro.wetteAbschließen(personen[0], rennen[0], rennen[0].schnecken[0], 100);
-            büro.wetteAbschließen(personen[0], rennen[0], rennen[0].schnecken[0], 100);
-            büro.wetteAbschließen(personen[0], rennen[0], rennen[0].schnecken[0], 100);
+            rennSimulator.getWettbüro().wetteAbschließen(personen[0], rennen[0], rennen[0].schnecken[0], 100);
+            rennSimulator.getWettbüro().wetteAbschließen(personen[1], rennen[0], rennen[0].schnecken[0], 100);
+            rennSimulator.getWettbüro().wetteAbschließen(personen[2], rennen[0], rennen[0].schnecken[0], 100);
+            rennSimulator.getWettbüro().wetteAbschließen(personen[3], rennen[0], rennen[0].schnecken[0], 100);
         }
-        catch (NameBereitsVergebenException ex)
-        {
-            System.out.println("Fehler beim Initialisieren: " + ex.toString());
-            return;
-        }
-        catch (ZuWenigGeldException ex)
+        catch (Exception ex)
         {
             System.out.println("Fehler beim Initialisieren: " + ex.toString());
             return;
         }
 
-        rennSimulator.start();
+        System.out.println("Beginne Simulation...");
+
+        try {
+            rennSimulator.start();
+        } catch (Exception ex) {
+            System.out.println("Fehler beim Simulieren: " + ex.toString());
+            return;
+        }
 
         System.out.println("Simulation beendet.");
     }

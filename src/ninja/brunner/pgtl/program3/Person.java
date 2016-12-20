@@ -15,6 +15,8 @@ public class Person {
     {
         ArrayList<Wette> wetten = new ArrayList<Wette>();
 
+        //TODO
+
         return wetten;
     }
 }

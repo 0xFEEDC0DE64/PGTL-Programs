@@ -1,7 +1,6 @@
 package ninja.brunner.pgtl.program3;
 
 import java.util.ArrayList;
-import ninja.brunner.pgtl.program3.exceptions.ZuWenigGeldException;
 
 public class Wettbüro {
     public ArrayList<Person> personen;
@@ -12,11 +11,11 @@ public class Wettbüro {
         wetten = new ArrayList<Wette>();
     }
 
-    public Wette wetteAbschließen(Person person, Rennen rennen, Schnecke schnecke, float einsatz) throws ZuWenigGeldException {
+    public Wette wetteAbschließen(Person person, Rennen rennen, Schnecke schnecke, float einsatz) throws Exception {
 
 
         if(person.guthaben < einsatz)
-            throw new ZuWenigGeldException();
+            throw new Exception("Zu wenig Geld!");
 
         person.guthaben -= einsatz;
 

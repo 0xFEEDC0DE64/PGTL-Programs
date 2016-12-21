@@ -1,7 +1,5 @@
 package ninja.brunner.pgtl.program3;
 
-import java.util.Random;
-
 public class Schnecke {
     public String name;
 
@@ -41,7 +39,7 @@ public class Schnecke {
             throw new Exception("Schnecke gerade nicht in einem Rennen!");
 
         if(position < currentRennen.rennStrecke.length) {
-            position += 1; //TODO: random
+            position += RennSimulator.random.nextInt(3);
             if (position > currentRennen.rennStrecke.length) {
                 position = currentRennen.rennStrecke.length;
                 return false;

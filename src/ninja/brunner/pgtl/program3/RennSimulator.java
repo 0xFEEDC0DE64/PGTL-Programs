@@ -1,6 +1,7 @@
 package ninja.brunner.pgtl.program3;
 
 import java.util.ArrayList;
+import java.util.Random;
 
 public class RennSimulator {
     private Wettbüro wettbüro;
@@ -10,6 +11,8 @@ public class RennSimulator {
     private ArrayList<Rennen> rennen;
 
     private boolean changesAllowed;
+
+    public static Random random = new Random();
 
     public Wettbüro getWettbüro() {
         return wettbüro;
@@ -69,13 +72,14 @@ public class RennSimulator {
         try {
             rennen.begin();
 
-            while(rennen.schritt()) {
+            do {
                 System.out.println();
                 System.out.println();
                 System.out.println();
                 System.out.println(rennen.toString());
                 Thread.sleep(100);
             }
+            while(rennen.schritt());
 
             rennen.cleanup();
         }

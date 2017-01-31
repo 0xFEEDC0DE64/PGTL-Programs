@@ -12,3 +12,7 @@ j für Jump. Zu gewisser Instruktion springen
 ![Program.cs Code](https://raw.githubusercontent.com/0xFEEDC0DE64/PGTL-Programs/master/src/ninja/brunner/pgtl/program2/screenshot.png)
 
 [Program.java](https://github.com/0xFEEDC0DE64/PGTL-Programs/blob/master/src/ninja/brunner/pgtl/program2/Program.java)
+
+Demo output:
+
+![Demo outout](https://raw.githubusercontent.com/0xFEEDC0DE64/PGTL-Programs/master/src/ninja/brunner/pgtl/program2/screenshot2.png)

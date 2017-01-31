@@ -25,7 +25,7 @@ public class Program {
             '-', '-', '-', '-', '-', '-', '-', '-', '-', '#',
             's',                                                                      //Sleep 1 second
             'n',
-            'j', 11                                                                   //Jump to instr offset 8 (Program 2)
+            'j', 8                                                                   //Jump to instr offset 8 (Program 2)
     };
 
     public static void main(String[] args) throws InterruptedException {
@@ -79,6 +79,9 @@ public class Program {
                         currMemIndex = 0;
                     else
                         currMemIndex++;
+                    break;
+                case 'n':
+                    System.out.println();
                     break;
             }
         }
